@@ -584,14 +584,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div><small>E-mail</small><a href="mailto:rodolfovasco@gmail.com">rodolfovasco@gmail.com</a></div>
       <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/rodolfovasco/" rel="me noopener">linkedin.com/in/rodolfovasco</a></div>
     </div>
-    <div class="foot"><span>© 2026 Rodolfo Vasco</span><button type="button" class="linklike" id="cookie-prefs">Preferências de cookies</button><span>Marketing, dados e tecnologia</span></div>
+    <div class="foot"><span>© 2026 Rodolfo Vasco</span><span><a class="linklike" href="privacidade/">Política de privacidade</a>&nbsp;&nbsp;&nbsp;<button type="button" class="linklike" id="cookie-prefs">Preferências de cookies</button></span><span>Marketing, dados e tecnologia</span></div>
   </div>
 </section>
 
 </main>
 
 <div class="consent" id="consent" role="region" aria-label="Aviso de cookies" hidden>
-  <p>Uso cookies para medir a audiência e melhorar o site. Você escolhe se aceita, e pode mudar de ideia a qualquer momento em "Preferências de cookies", no rodapé.</p>
+  <p>Uso cookies para medir a audiência e melhorar o site. Você escolhe se aceita, e pode mudar de ideia a qualquer momento em "Preferências de cookies", no rodapé. <a class="linklike" href="privacidade/">Política de privacidade</a>.</p>
   <div class="consent-actions">
     <button type="button" class="c-btn c-solid" data-consent="granted">Aceitar</button>
     <button type="button" class="c-btn c-line" data-consent="denied">Recusar</button>
@@ -771,7 +771,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   box.addEventListener('click', function(e){ var b = e.target.closest('[data-consent]'); if(b) applyConsent(b.getAttribute('data-consent')); });
   document.getElementById('cookie-prefs').addEventListener('click', function(){ showBox(true); });
   var saved = null; try{ saved = localStorage.getItem('rv_consent'); }catch(e){}
-  if(!saved) setTimeout(function(){ showBox(false); }, 2800);
+  if(location.hash === '#cookies') setTimeout(function(){ showBox(true); }, 600);
+  else if(!saved) setTimeout(function(){ showBox(false); }, 2800);
 
   /* ---- eventos para o GTM (dataLayer) ---- */
   document.addEventListener('click', function(e){

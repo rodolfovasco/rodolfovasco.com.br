@@ -3,6 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Consent Mode v2: tudo negado até o visitante aceitar (precisa vir antes do GTM) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{ if(localStorage.getItem('rv_consent')==='granted'){ gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'}); } }catch(e){}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M989M5H');</script>
+<!-- End Google Tag Manager -->
 <title>IA & Martech | Rodolfo Vasco, Head de Marketing</title>
 <meta name="description" content="IA & Martech: dados, automação, performance, analytics e SEO/GEO/AEO para marcas de todos os portes. Com Rodolfo Vasco, Head de Marketing, 17 anos de experiência.">
 <link rel="canonical" href="https://rodolfovasco.com.br/">
@@ -361,6 +375,19 @@ ul{list-style:none}
 .pdial span{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-weight:500;font-size:14px}
 @media (max-width:900px){.pdial{display:none}}
 
+.consent{position:fixed;left:50%;bottom:18px;z-index:60;width:min(420px,calc(100vw - 32px));padding:18px 18px 16px;background:rgba(8,33,28,.96);color:var(--stone);border:1px solid rgba(230,228,222,.18);font-size:14px;line-height:1.5;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transform:translate(-50%,12px);transition:opacity .5s ease,transform .5s var(--ease)}
+.consent.show{opacity:1;transform:translate(-50%,0)}
+.consent[hidden]{display:none}
+.consent p{color:#c9d3ce;margin-bottom:14px}
+.consent-actions{display:flex;gap:10px}
+.c-btn{font:inherit;font-size:13.5px;font-weight:500;padding:10px 18px;border:1px solid var(--brass);cursor:pointer;background:transparent;color:var(--stone);transition:background .25s,color .25s,border-color .25s}
+.c-solid{background:var(--brass);color:var(--abyss)}
+.c-solid:hover{background:var(--stone);border-color:var(--stone)}
+.c-line{border-color:rgba(230,228,222,.35)}
+.c-line:hover{border-color:var(--brass);color:var(--brass)}
+.linklike{background:none;border:0;color:inherit;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
+.linklike:hover{color:var(--brass)}
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -372,6 +399,10 @@ ul{list-style:none}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M989M5H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <a class="skip" href="#sobre">Pular para o conteúdo</a>
 
 <header class="top">
@@ -553,11 +584,19 @@ ul{list-style:none}
       <div><small>E-mail</small><a href="mailto:rodolfovasco@gmail.com">rodolfovasco@gmail.com</a></div>
       <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/rodolfovasco/" rel="me noopener">linkedin.com/in/rodolfovasco</a></div>
     </div>
-    <div class="foot"><span>© 2026 Rodolfo Vasco</span><span>Marketing, dados e tecnologia</span></div>
+    <div class="foot"><span>© 2026 Rodolfo Vasco</span><button type="button" class="linklike" id="cookie-prefs">Preferências de cookies</button><span>Marketing, dados e tecnologia</span></div>
   </div>
 </section>
 
 </main>
+
+<div class="consent" id="consent" role="region" aria-label="Aviso de cookies" hidden>
+  <p>Uso cookies para medir a audiência e melhorar o site. Você escolhe se aceita, e pode mudar de ideia a qualquer momento em "Preferências de cookies", no rodapé.</p>
+  <div class="consent-actions">
+    <button type="button" class="c-btn c-solid" data-consent="granted">Aceitar</button>
+    <button type="button" class="c-btn c-line" data-consent="denied">Recusar</button>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -703,10 +742,54 @@ ul{list-style:none}
     });
   }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  var seen = {};
   var chapIO = new IntersectionObserver(function(en){
-    en.forEach(function(e){ if(e.isIntersecting) chap.textContent = e.target.getAttribute('data-chapter'); });
+    en.forEach(function(e){
+      if(!e.isIntersecting) return;
+      chap.textContent = e.target.getAttribute('data-chapter');
+      var id = e.target.id;
+      if(id && !seen[id]){ seen[id] = 1; dataLayer.push({event:'section_view', section_id:id}); }
+    });
   }, {rootMargin:'-50% 0px -50% 0px', threshold:0});
   document.querySelectorAll('[data-chapter]').forEach(function(s){ chapIO.observe(s); });
+
+  /* ---- consentimento (Consent Mode v2) ---- */
+  var box = document.getElementById('consent');
+  function showBox(focus){
+    box.hidden = false;
+    requestAnimationFrame(function(){ box.classList.add('show'); });
+    if(focus) box.querySelector('button').focus();
+  }
+  function applyConsent(v){
+    var st = v === 'granted' ? 'granted' : 'denied';
+    gtag('consent','update',{ad_storage:st, ad_user_data:st, ad_personalization:st, analytics_storage:st});
+    dataLayer.push({event:'consent_update', consent_state:st});
+    try{ localStorage.setItem('rv_consent', st); }catch(e){}
+    box.classList.remove('show');
+    setTimeout(function(){ box.hidden = true; }, 500);
+  }
+  box.addEventListener('click', function(e){ var b = e.target.closest('[data-consent]'); if(b) applyConsent(b.getAttribute('data-consent')); });
+  document.getElementById('cookie-prefs').addEventListener('click', function(){ showBox(true); });
+  var saved = null; try{ saved = localStorage.getItem('rv_consent'); }catch(e){}
+  if(!saved) setTimeout(function(){ showBox(false); }, 2800);
+
+  /* ---- eventos para o GTM (dataLayer) ---- */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a'); if(!a) return;
+    var h = a.getAttribute('href') || '', t = null;
+    if(h.indexOf('wa.me') > -1) t = 'whatsapp';
+    else if(h.indexOf('mailto:') === 0) t = 'email';
+    else if(h.indexOf('linkedin.com') > -1) t = 'linkedin';
+    else if(h.charAt(0) === '#') t = 'interno';
+    if(!t) return;
+    var sec = a.closest('[data-chapter]');
+    dataLayer.push({event:'cta_click', cta_type:t, cta_text:(a.textContent||'').trim().slice(0,60), cta_url:h.slice(0,120), section_id: sec ? sec.id : 'header'});
+  });
+  document.querySelectorAll('.faq summary').forEach(function(sm){
+    sm.addEventListener('click', function(){
+      if(!sm.parentNode.open) dataLayer.push({event:'faq_open', faq_question:sm.textContent.trim()});
+    });
+  });
 })();
 </script>
 </body>

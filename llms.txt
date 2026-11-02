@@ -7,16 +7,16 @@
 - Arquitetura de martech
 - IA e automação de growth
 - Marketing de performance
-- Web analytics (GA4, atribuição)
+- Web analytics
 - SEO, AEO e GEO
 
 ## Cases
-- Hospital de Amor: captação de doadores com mídia de performance (Google Ads, Meta Ads, mídia programática)
-- Votorantim: globalização da marca e captação de investidores no exterior
-- Premix: SEO técnico e ranqueamento
-- Audi: refatoração de site, PageSpeed e Core Web Vitals
-- Kohler Brasil: lançamento do chuveiro Moxie, meta de 5.000 unidades
-- Be & Care: e-commerce global de saúde e beleza, menor CAC e maior ticket médio
+- Hospital de Amor: Captar doadores e manter o engajamento deles ao longo do tempo.
+- Votorantim: Globalizar a marca e atrair novos investidores no mercado estrangeiro.
+- Premix: Ranquear e adquirir tráfego orgânico para os termos-chave da marca.
+- Audi: Elevar o desempenho do site de uma empresa do setor automobilístico.
+- Kohler Brasil: Vender 5.000 unidades do Moxie, o chuveiro monofuncional, no Brasil.
+- Be & Care: Construir a presença digital de um e-commerce de saúde e beleza em vários países.
 
 ## Formação
 - Universidade Presbiteriana Mackenzie: Especialização em Marketing
@@ -34,3 +34,77 @@ Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Prof
 
 ## Privacidade
 - Política de privacidade: https://rodolfovasco.com.br/privacidade/
+
+## English
+
+> AI & Martech: Head of Marketing with 17 years of experience at the intersection of marketing and technology. Has served more than 50 brands, from small to large, and holds more than 40 official professional certifications.
+
+### Expertise
+- Data-driven strategy
+- Martech architecture
+- AI and growth automation
+- Performance marketing
+- Web analytics
+- SEO, AEO and GEO
+
+### Cases
+- Hospital de Amor: Attract donors and keep them engaged over time.
+- Votorantim: Take the brand global and attract new investors in foreign markets.
+- Premix: Rank and acquire organic traffic for the brand's key terms.
+- Audi: Raise the performance of an automotive company's website.
+- Kohler Brasil: Sell 5,000 units of the Moxie, the single-function shower head, in Brazil.
+- Be & Care: Build the digital presence of a health and beauty e-commerce across several countries.
+
+### Education
+- Universidade Presbiteriana Mackenzie: Specialization in Marketing
+- FGV, Fundação Getulio Vargas: Bachelor's degree in Systems Analysis and Development; Extension-level postgraduate degree in Communication Management
+- ESPM: Master in Digital Marketing
+- Universidade do Vale do Silício: Postgraduate degree in Digital Marketing
+
+### Certifications
+Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Professional, Twitter Flight School, AI Specialist, Data Driven Marketing
+
+### Contact
+- Site: https://rodolfovasco.com.br/en/
+- LinkedIn: https://www.linkedin.com/in/rodolfovasco/
+- E-mail: rodolfovasco@gmail.com
+
+### Privacy
+- Privacy policy: https://rodolfovasco.com.br/en/privacy/
+
+## Español
+
+> IA & Martech: Head de Marketing con 17 años de experiencia en la intersección entre marketing y tecnología. Ha atendido a más de 50 marcas, de pequeñas a grandes, y suma más de 40 certificaciones profesionales oficiales.
+
+### Especialidades
+- Estrategia basada en datos
+- Arquitectura de martech
+- IA y automatización de growth
+- Marketing de performance
+- Analítica web
+- SEO, AEO y GEO
+
+### Casos
+- Hospital de Amor: Captar donantes y mantener su compromiso a lo largo del tiempo.
+- Votorantim: Globalizar la marca y atraer nuevos inversionistas en el mercado extranjero.
+- Premix: Posicionar y adquirir tráfico orgánico para los términos clave de la marca.
+- Audi: Elevar el rendimiento del sitio de una empresa del sector automotriz.
+- Kohler Brasil: Vender 5.000 unidades del Moxie, la ducha monofuncional, en Brasil.
+- Be & Care: Construir la presencia digital de un e-commerce de salud y belleza en varios países.
+
+### Formación
+- Universidade Presbiteriana Mackenzie: Especialización en Marketing
+- FGV, Fundação Getulio Vargas: Grado en Análisis y Desarrollo de Sistemas; Posgrado de extensión en Gestión de la Comunicación
+- ESPM: Máster en Digital Marketing
+- Universidade do Vale do Silício: Posgrado en Marketing Digital
+
+### Certificaciones
+Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Professional, Twitter Flight School, IA Specialist, Data Driven Marketing
+
+### Contacto
+- Site: https://rodolfovasco.com.br/es/
+- LinkedIn: https://www.linkedin.com/in/rodolfovasco/
+- E-mail: rodolfovasco@gmail.com
+
+### Privacidad
+- Política de privacidad: https://rodolfovasco.com.br/es/privacidad/

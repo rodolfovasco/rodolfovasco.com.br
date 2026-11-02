@@ -6,6 +6,7 @@
 <!-- Consent Mode v2: tudo negado até o visitante aceitar (precisa vir antes do GTM) -->
 <script>
 window.dataLayer = window.dataLayer || [];
+dataLayer.push({page_language:'pt'});
 function gtag(){ dataLayer.push(arguments); }
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
 try{ if(localStorage.getItem('rv_consent')==='granted'){ gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'}); } }catch(e){}
@@ -20,11 +21,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title>Política de privacidade | Rodolfo Vasco</title>
 <meta name="description" content="Como o site de Rodolfo Vasco trata dados pessoais e cookies, seus direitos pela LGPD e como falar sobre privacidade.">
 <link rel="canonical" href="https://rodolfovasco.com.br/privacidade/">
+<link rel="alternate" hreflang="pt-BR" href="https://rodolfovasco.com.br/privacidade/">
+<link rel="alternate" hreflang="en" href="https://rodolfovasco.com.br/en/privacy/">
+<link rel="alternate" hreflang="es" href="https://rodolfovasco.com.br/es/privacidad/">
+<link rel="alternate" hreflang="x-default" href="https://rodolfovasco.com.br/privacidade/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#04130F">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#E6E4DE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +48,12 @@ a{color:inherit}
 .brand-name{font-size:12px;line-height:1.08;letter-spacing:-.01em;font-weight:500}
 .back{font-size:14.5px;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
 .back:hover{color:var(--brass-ink)}
+.bar-right{display:flex;align-items:center;gap:clamp(14px,3vw,28px)}
+.lang{display:flex;font-size:13px;font-weight:500;letter-spacing:.02em}
+.lang a{padding:8px 7px;text-decoration:none;opacity:.5;transition:opacity .25s}
+.lang a:hover,.lang a[aria-current]{opacity:1}
+.lang a[aria-current]{text-decoration:underline;text-underline-offset:5px}
+@media (max-width:430px){.brand-name{display:none}}
 main{max-width:760px;margin:0 auto;padding:clamp(48px,9vw,112px) var(--pad) clamp(72px,10vw,140px)}
 h1{font-weight:500;font-size:clamp(2.6rem,7vw,5rem);line-height:.95;letter-spacing:-.06em;margin-bottom:18px}
 .date{color:var(--muted);font-size:15px;margin-bottom:36px}
@@ -66,13 +76,16 @@ footer{padding:28px var(--pad) 36px;border-top:1px solid var(--line);font-size:1
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header class="bar">
-  <a class="brand" href="../" aria-label="Rodolfo Vasco, voltar ao início"><span class="brand-symbol">rv.</span><span class="brand-name">Rodolfo<br>Vasco</span></a>
-  <a class="back" href="../">Voltar ao site</a>
+  <a class="brand" href="/" aria-label="Rodolfo Vasco, voltar ao início"><span class="brand-symbol">rv.</span><span class="brand-name">Rodolfo<br>Vasco</span></a>
+  <div class="bar-right">
+    <nav class="lang" aria-label="Idioma"><a href="/privacidade/" hreflang="pt-BR" lang="pt-BR" data-lang="pt" title="Português" aria-current="true">PT</a><a href="/en/privacy/" hreflang="en" lang="en" data-lang="en" title="English">EN</a><a href="/es/privacidad/" hreflang="es" lang="es" data-lang="es" title="Español">ES</a></nav>
+    <a class="back" href="/">Voltar ao site</a>
+  </div>
 </header>
 
 <main>
   <h1>Política de privacidade</h1>
-  <p class="date">Atualizada em 30 de outubro de 2026</p>
+  <p class="date">Atualizada em 2 de novembro de 2026</p>
   <p class="lead">Este é um site pessoal e coleta o mínimo necessário. Aqui explico, de forma direta, quais dados são tratados, por quê e como você controla isso, conforme a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018).</p>
 
   <h2>1. Quem é o responsável</h2>
@@ -89,11 +102,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>3. Cookies e a sua escolha</h2>
   <p>Na primeira visita, o site mostra um aviso de cookies. Sem o seu aceite, as ferramentas de medição e de publicidade ficam desativadas (Consent Mode v2 do Google).</p>
   <ul>
-    <li><strong>Essencial:</strong> <code>rv_consent</code>, guardado no armazenamento local do seu navegador, registra se você aceitou ou recusou. Fica até você apagar os dados do site.</li>
+    <li><strong>Essencial:</strong> <code>rv_consent</code>, guardado no armazenamento local do seu navegador, registra se você aceitou ou recusou. Fica até você apagar os dados do site. O mesmo vale para <code>rv_lang</code>, que guarda o idioma que você escolheu.</li>
     <li><strong>Medição (só com aceite):</strong> cookies do Google Analytics, como <code>_ga</code>, quando essa ferramenta estiver ativa no Tag Manager. O Google define o prazo, em geral de até 2 anos.</li>
   </ul>
   <p>Você pode mudar de ideia quando quiser, ou apagar os dados do site no seu navegador.</p>
-  <a class="btn" href="../#cookies">Alterar minha escolha de cookies</a>
+  <a class="btn" href="/#cookies">Alterar minha escolha de cookies</a>
 
   <h2>4. Com quem os dados podem ser compartilhados</h2>
   <p>Com o Google (Tag Manager, Analytics e Fonts), com o GitHub (hospedagem do site) e com as plataformas de mensagem que você escolher para falar comigo. Não vendo dados pessoais. Alguns desses provedores ficam fora do Brasil, como nos Estados Unidos, e a transferência segue a LGPD, com as garantias oferecidas por eles.</p>
@@ -117,6 +130,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>Posso atualizar esta política quando o site mudar. A data da última revisão está sempre no topo da página.</p>
 </main>
 
-<footer><span>© 2026 Rodolfo Vasco</span><a href="../">Voltar ao site</a></footer>
+<footer><span>© 2026 Rodolfo Vasco</span><a href="/">Voltar ao site</a></footer>
+<script>
+document.addEventListener('click',function(e){var lg=e.target.closest('a[data-lang]');if(!lg)return;
+try{localStorage.setItem('rv_lang',lg.getAttribute('data-lang'));}catch(x){}
+dataLayer.push({event:'language_switch',language_from:'pt',language_to:lg.getAttribute('data-lang')});});
+</script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rodolfo Vasco: artigos</title>
+    <link>https://rodolfovasco.com.br/artigos/</link>
+    <atom:link href="https://rodolfovasco.com.br/artigos/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Artigos de Rodolfo Vasco sobre inteligência artificial, martech, performance, analytics e SEO, AEO e GEO, com a experiência de 17 anos de mercado.</description>
+    <language>pt-BR</language>
+    <item>
+      <title>SEO, AEO e GEO: a diferença e por onde começar</title>
+      <link>https://rodolfovasco.com.br/artigos/seo-aeo-geo-diferenca-por-onde-comecar/</link>
+      <guid isPermaLink="true">https://rodolfovasco.com.br/artigos/seo-aeo-geo-diferenca-por-onde-comecar/</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 -0300</pubDate>
+      <category>SEO, AEO e GEO</category>
+      <description>SEO faz a sua página aparecer na busca. AEO faz o seu conteúdo ser escolhido como resposta direta. GEO faz as IAs generativas citarem a sua marca. Os três partem da mesma base: um site rápido, rastreável e com respostas claras. Comece por ela.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,6 +2,9 @@
 
 > IA & Martech: Head de Marketing com 17 anos de experiência na interseção entre marketing e tecnologia. Atendeu mais de 50 marcas, de pequeno a grande porte, e soma mais de 40 certificações profissionais oficiais.
 
+## Artigos
+- [SEO, AEO e GEO: a diferença e por onde começar](https://rodolfovasco.com.br/artigos/seo-aeo-geo-diferenca-por-onde-comecar/): SEO, AEO e GEO são partes do mesmo trabalho: ser encontrado, ser escolhido como resposta e ser citado pelas IAs. Veja o que cada um faz e por onde começar.
+
 ## Especializações
 - Estratégia baseada em dados
 - Arquitetura de martech
@@ -39,6 +42,9 @@ Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Prof
 
 > AI & Martech: Head of Marketing with 17 years of experience at the intersection of marketing and technology. Has served more than 50 brands, from small to large, and holds more than 40 official professional certifications.
 
+### Articles
+- [SEO, AEO and GEO: the difference and where to start](https://rodolfovasco.com.br/en/articles/seo-aeo-geo-difference-where-to-start/): SEO, AEO and GEO are parts of the same job: being found, being chosen as the answer and being cited by AI. Here is what each one does and where to start.
+
 ### Expertise
 - Data-driven strategy
 - Martech architecture
@@ -75,6 +81,9 @@ Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Prof
 ## Español
 
 > IA & Martech: Head de Marketing con 17 años de experiencia en la intersección entre marketing y tecnología. Ha atendido a más de 50 marcas, de pequeñas a grandes, y suma más de 40 certificaciones profesionales oficiales.
+
+### Artículos
+- [SEO, AEO y GEO: la diferencia y por dónde empezar](https://rodolfovasco.com.br/es/articulos/seo-aeo-geo-diferencia-por-donde-empezar/): SEO, AEO y GEO son partes del mismo trabajo: ser encontrado, ser elegido como respuesta y ser citado por las IAs. Mira qué hace cada uno y por dónde empezar.
 
 ### Especialidades
 - Estrategia basada en datos

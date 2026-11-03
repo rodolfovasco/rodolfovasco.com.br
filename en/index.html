@@ -43,6 +43,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI & Martech | Rodolfo Vasco, Head of Marketing">
 <meta name="twitter:description" content="17 years at the intersection of marketing and technology.">
+<meta property="og:image" content="https://rodolfovasco.com.br/og/default-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://rodolfovasco.com.br/og/default-en.png">
+<link rel="alternate" type="application/rss+xml" title="Rodolfo Vasco: articles" href="https://rodolfovasco.com.br/en/articles/feed.xml">
 
 <script type="application/ld+json">
 {
@@ -384,6 +389,22 @@ ul{list-style:none}
 .faq .ans{padding:0 0 28px;max-width:62ch;color:var(--muted);font-size:17px}
 .faq .ans a{color:var(--fg);text-decoration:underline;text-underline-offset:3px}
 
+/* ---------- artigos (home) ---------- */
+.art-list{display:block}
+.art-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:var(--pad);align-items:baseline;padding:clamp(22px,3vw,38px) 0;border-top:1px solid var(--line);transition:opacity .35s ease}
+.art-row:last-of-type{border-bottom:1px solid var(--line)}
+.art-meta{font-size:14.5px;color:var(--muted);line-height:1.5}
+.art-row h3{font-family:var(--display);font-weight:500;font-size:clamp(1.5rem,2.8vw,2.4rem);line-height:1.08;letter-spacing:-.04em;transition:transform .5s var(--ease),color .3s}
+.art-row p{color:var(--muted);font-size:16px;max-width:52ch;margin-top:10px}
+.art-more{display:inline-block;margin-top:28px;font-size:15px;font-weight:500;border-bottom:1px solid currentColor;padding-bottom:3px}
+.art-more:hover{color:var(--accent)}
+@media (max-width:760px){.art-row{grid-template-columns:1fr;gap:8px}}
+@media (hover:hover){
+  .art-list:hover .art-row{opacity:.4}
+  .art-list .art-row:hover{opacity:1}
+  .art-row:hover h3{transform:translateX(12px);color:var(--accent)}
+}
+
 /* ---------- contato ---------- */
 .contact{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:calc(76px + 40px) var(--pad) 32px}
 .contact h2{font-family:var(--display);font-weight:500;font-size:clamp(3.6rem,15vw,14rem);line-height:.86;letter-spacing:-.065em;margin:auto 0;padding:6vh 0}
@@ -441,6 +462,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#cases">Cases</a>
     <a href="#formacao">Education</a>
     <a href="#perguntas">FAQ</a>
+    <a href="#artigos">Articles</a>
   </nav>
   <div class="top-right">
     <nav class="lang" aria-label="Language"><a href="/" hreflang="pt-BR" lang="pt-BR" data-lang="pt" title="Português">PT</a><a href="/en/" hreflang="en" lang="en" data-lang="en" title="English" aria-current="true">EN</a><a href="/es/" hreflang="es" lang="es" data-lang="es" title="Español">ES</a></nav>
@@ -608,7 +630,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="contact theme-dark bg-abyss" id="contato" data-chapter="VII">
+<section class="sec theme-light bg-stone" id="artigos" data-chapter="VII">
+  <div class="layout">
+    <div class="rail"><b>VII</b>Articles</div>
+    <div>
+      <h2 class="craft-intro">Ideas on AI, martech and digital marketing.</h2>
+      <div class="art-list">
+      <a class="art-row" href="/en/articles/seo-aeo-geo-difference-where-to-start/"><span class="art-meta">November 3, 2026<br>SEO, AEO and GEO</span><div><h3>SEO, AEO and GEO: the difference and where to start</h3><p>SEO, AEO and GEO are parts of the same job: being found, being chosen as the answer and being cited by AI. Here is what each one does and where to start.</p></div></a>
+      </div>
+      <a class="art-more" href="/en/articles/">See all articles</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact theme-dark bg-abyss" id="contato" data-chapter="VIII">
   <h2>Let's talk.</h2>
   <div>
     <div class="contact-links">
@@ -819,7 +854,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if(h.indexOf('wa.me') > -1) t = 'whatsapp';
     else if(h.indexOf('mailto:') === 0) t = 'email';
     else if(h.indexOf('linkedin.com') > -1) t = 'linkedin';
-    else if(h.charAt(0) === '#') t = 'interno';
+    else if(h.charAt(0) === '#' || (h.charAt(0) === '/' && h.charAt(1) !== '/')) t = 'interno';
     if(!t) return;
     var sec = a.closest('[data-chapter]');
     dataLayer.push({event:'cta_click', cta_type:t, cta_text:(a.textContent||'').trim().slice(0,60), cta_url:h.slice(0,120), section_id: sec ? sec.id : 'header', page_language:'en'});

@@ -4,6 +4,7 @@
 
 ## Artigos
 - [Mídia de performance na era da IA: o que muda e como agir](https://rodolfovasco.com.br/artigos/midia-de-performance-na-era-da-ia/): A IA já decide lances, públicos e criativos nas plataformas de mídia. Veja o que muda na mídia de performance e o que fazer: dados, criativos e medição.
+- [Rótulo de IA em anúncios: o que é e o que fazer](https://rodolfovasco.com.br/artigos/rotulo-de-ia-em-anuncios-o-que-fazer/): Google e Meta passaram a sinalizar anúncios feitos com IA. Entenda como funcionam os rótulos, o que declarar e um passo a passo para o seu time de mídia.
 - [Data Analytics: o que é, os 4 tipos e por onde começar](https://rodolfovasco.com.br/artigos/data-analytics-o-que-e-e-por-onde-comecar/): Data analytics é transformar dados em decisões. Veja o que é, os 4 tipos de análise, as etapas do processo e um roteiro prático para começar.
 - [SEO, AEO e GEO: a diferença e por onde começar](https://rodolfovasco.com.br/artigos/seo-aeo-geo-diferenca-por-onde-comecar/): SEO, AEO e GEO são partes do mesmo trabalho: ser encontrado, ser escolhido como resposta e ser citado pelas IAs. Veja o que cada um faz e por onde começar.
 
@@ -46,6 +47,7 @@ Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Prof
 
 ### Articles
 - [Performance Media in the AI Era: What Changes and What to Do](https://rodolfovasco.com.br/en/articles/performance-media-in-the-ai-era/): AI already decides bids, audiences and creatives on ad platforms. See what changes in performance media and what to do: data, creative and measurement.
+- [AI labels in ads: what they are and what to do](https://rodolfovasco.com.br/en/articles/ai-labels-in-ads-what-to-do/): Google and Meta now flag ads made with AI. Learn how the labels work, what to disclose, and a step-by-step process your media team can adopt.
 - [Data Analytics: What It Is, 4 Types and Where to Start](https://rodolfovasco.com.br/en/articles/data-analytics-what-it-is-and-where-to-start/): Data analytics turns data into decisions. What it is, the 4 types of analysis, the process steps and a practical roadmap to start in your company.
 - [SEO, AEO and GEO: the difference and where to start](https://rodolfovasco.com.br/en/articles/seo-aeo-geo-difference-where-to-start/): SEO, AEO and GEO are parts of the same job: being found, being chosen as the answer and being cited by AI. Here is what each one does and where to start.
 
@@ -88,6 +90,7 @@ Google Ads Certified, Meta Blueprint, HubSpot Expert, LinkedIn Expert, Bing Prof
 
 ### Artículos
 - [Medios de performance en la era de la IA: qué cambia](https://rodolfovasco.com.br/es/articulos/medios-de-performance-en-la-era-de-la-ia/): La IA ya decide pujas, audiencias y creatividades en las plataformas. Qué cambia en los medios de performance y qué hacer: datos, creatividad y medición.
+- [Etiquetas de IA en anuncios: qué son y qué hacer](https://rodolfovasco.com.br/es/articulos/etiquetas-de-ia-en-anuncios-que-hacer/): Google y Meta ya señalan anuncios hechos con IA. Entiende cómo funcionan las etiquetas, qué declarar y un paso a paso para tu equipo de medios.
 - [Data Analytics: qué es, 4 tipos y por dónde empezar](https://rodolfovasco.com.br/es/articulos/data-analytics-que-es-y-por-donde-empezar/): Data analytics es convertir datos en decisiones. Qué es, los 4 tipos de análisis, las etapas del proceso y una hoja de ruta práctica para empezar.
 - [SEO, AEO y GEO: la diferencia y por dónde empezar](https://rodolfovasco.com.br/es/articulos/seo-aeo-geo-diferencia-por-donde-empezar/): SEO, AEO y GEO son partes del mismo trabajo: ser encontrado, ser elegido como respuesta y ser citado por las IAs. Mira qué hace cada uno y por dónde empezar.
 

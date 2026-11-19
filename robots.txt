@@ -1,14 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /_src/
 
 # Crawlers de IA generativa (GEO): conteúdo público e liberado para citação
 User-agent: GPTBot
 Allow: /
+Disallow: /_src/
 User-agent: ClaudeBot
 Allow: /
+Disallow: /_src/
 User-agent: PerplexityBot
 Allow: /
+Disallow: /_src/
 User-agent: Google-Extended
 Allow: /
+Disallow: /_src/
 
 Sitemap: https://rodolfovasco.com.br/sitemap.xml

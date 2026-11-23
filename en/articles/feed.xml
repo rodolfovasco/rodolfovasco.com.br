@@ -7,6 +7,14 @@
     <description>Articles by Rodolfo Vasco on artificial intelligence, martech, performance, analytics and SEO, AEO and GEO, drawing on 17 years in the market.</description>
     <language>en</language>
     <item>
+      <title>AI traffic in GA4: how to measure ChatGPT and Gemini</title>
+      <link>https://rodolfovasco.com.br/en/articles/ai-traffic-in-ga4-how-to-measure/</link>
+      <guid isPermaLink="true">https://rodolfovasco.com.br/en/articles/ai-traffic-in-ga4-how-to-measure/</guid>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 -0300</pubDate>
+      <category>Analytics</category>
+      <description>To measure AI assistant traffic in GA4, create a custom channel group that collects the sources of those assistants. Some visits arrive with no referrer and land in Direct, so the number you see is a floor, not the total.</description>
+    </item>
+    <item>
       <title>MCP for marketing: what it is and how to use it safely</title>
       <link>https://rodolfovasco.com.br/en/articles/mcp-for-marketing-what-it-is-and-how-to-use-it/</link>
       <guid isPermaLink="true">https://rodolfovasco.com.br/en/articles/mcp-for-marketing-what-it-is-and-how-to-use-it/</guid>

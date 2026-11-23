@@ -7,6 +7,14 @@
     <description>Artículos de Rodolfo Vasco sobre inteligencia artificial, martech, performance, analítica y SEO, AEO y GEO, con la experiencia de 17 años de mercado.</description>
     <language>es</language>
     <item>
+      <title>Tráfico de IA en GA4: cómo medir ChatGPT y Gemini</title>
+      <link>https://rodolfovasco.com.br/es/articulos/trafico-de-ia-en-ga4-como-medir/</link>
+      <guid isPermaLink="true">https://rodolfovasco.com.br/es/articulos/trafico-de-ia-en-ga4-como-medir/</guid>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 -0300</pubDate>
+      <category>Analítica</category>
+      <description>Para medir el tráfico de asistentes de IA en GA4, crea un grupo de canales personalizado que reúna los orígenes (source) de esos asistentes. Parte de las visitas llega sin referente y cae en Direct, así que el número que ves es un piso, no el total.</description>
+    </item>
+    <item>
       <title>MCP para marketing: qué es y cómo usarlo con seguridad</title>
       <link>https://rodolfovasco.com.br/es/articulos/mcp-para-marketing-que-es-y-como-usarlo/</link>
       <guid isPermaLink="true">https://rodolfovasco.com.br/es/articulos/mcp-para-marketing-que-es-y-como-usarlo/</guid>
